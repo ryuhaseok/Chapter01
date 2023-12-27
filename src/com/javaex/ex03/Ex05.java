@@ -17,7 +17,7 @@ public class Ex05 {
 		
 	} else {
 		
-		System.out.println("임금은 " + hour*10000*1.5 + "원 입니다.");		
+		System.out.println("임금은 " + ( (8*10000) + (hour-8)*10000*1.5 ) + "원 입니다.");		
 		
 	}
 	
