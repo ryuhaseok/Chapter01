@@ -2,7 +2,7 @@ package com.javaex.ex03;
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex08review {
 
 	public static void main(String[] args) {
 
@@ -10,22 +10,21 @@ public class Ex08 {
 		
 		System.out.println("숫자를 입력하세요");
 		
-		int point = sc.nextInt();
-		
-		if ( point>0 && point%2==0) {
-		
-			System.out.println("짝수입니다.");
-			
-		} else if ( point>0 && point%2==1 ) {
-			
-			System.out.println("홀수입니다.");
-			
-		} else if (point<0 ) {
-			
+		int no = sc.nextInt();
+		// 양수?
+		if (no>0) {
+			// 짝수?
+			if (no%2==0) {
+				System.out.println("짝수입니다.");
+				
+			} else {
+				System.out.println("홀수입니다.");
+				
+			}
+		} else if (no<0) {
 			System.out.println("음수입니다.");
 			
 		} else {
-			
 			System.out.println("0입니다.");
 			
 		}
